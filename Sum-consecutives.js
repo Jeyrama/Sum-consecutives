@@ -31,3 +31,5 @@ function sumConsecutives(s) {
     return prev;
   }, []);
 }
+
+// or
