@@ -33,3 +33,16 @@ function sumConsecutives(s) {
 }
 
 // or
+
+function sumConsecutives(s) {
+  let sum = 0,
+  sums = [];
+  for(let i = 0; i < s.length; i++){
+    sum += s[i];
+    if(s[i] != s[i+1]){
+      sums.push(sum);
+      sum = 0;
+    }
+  }
+  return sums;
+}
